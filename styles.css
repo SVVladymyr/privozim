@@ -1,0 +1,614 @@
+/*
+Theme Name: Privozim
+Theme URI: Privozim.com
+Description: Тема для сайта Privozim.com
+Author: ITGeen
+Author URI: http://itgeen.com/
+Template:
+Version: 1.0
+*/
+
+html {
+    font-size: 14px;
+}
+
+/*
+    Add font
+ */
+
+
+@font-face {
+    font-family: no_name_37; /* Гарнитура шрифта */
+    src: url(fonts/no_name_37.otf); /* Путь к файлу со шрифтом */
+
+}
+
+@font-face {
+    font-family: no_name_37_Light; /* Гарнитура шрифта */
+    src: url(fonts/no_name_37_Light.otf); /* Путь к файлу со шрифтом */
+
+}
+
+@font-face {
+    font-family: SouvienneBold; /* Гарнитура шрифта */
+    src: url(fonts/7435.woff); /* Путь к файлу со шрифтом */
+
+}
+
+/*
+    Styles for header
+*/
+
+.header-color {
+    background-color: #103873;
+}
+
+.header-height {
+    height: 2.7em;
+}
+
+.text-header-size {
+    font-size: 1.1em;
+    font-family: no_name_37;
+    font-weight: bold;
+}
+
+.header-margin-top {
+    margin-top: 0.5rem;
+}
+
+.search-margin-top {
+    margin-top: 1.5rem;
+}
+
+input[type="search"]:-webkit-input-placeholder { font-size: 0.9rem; }
+input[type="search"]:-ms-input-placeholder { font-size: 0.9rem; }
+input[type="search"]:-ms-input-placeholder { font-size: 0.9rem; }
+input[type="search"]::placeholder { font-size: 0.9rem; }
+input[type="search"]:focus {
+    border-color: #258217;
+}
+
+/*
+    Set borders green color
+ */
+.border-green{
+    border-color: #258217;
+    border-width: 0.1875em;
+}
+
+.border-green:focus {
+    border-color: #258217;
+}
+
+.border-green:hover {
+    border-color: #258217;
+}
+
+.border-right-clear {
+    border-right: 0;
+}
+
+.border-left-clear {
+    border-left: 0;
+}
+
+/*
+    Styles for navigation menu
+ */
+.nav-color-green {
+    background-color: #258217;
+}
+
+.nav-width {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.nav-color-red {
+    background-color: red;
+}
+
+.nav-text {
+    font-size: 1.3em;
+    font-family: no_name_37;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin-left: 0.3em;
+}
+
+@media screen and (min-width: 1025px) {
+    .hidden-button-menu {
+        display: none;
+    }
+    .nav-link {
+    padding-right: 10rem;
+    padding-left: 3rem !important;
+}
+
+}
+
+@media screen and (max-width: 1025px) {
+    .hidden-button-menu {
+        display: inline-block;
+    }
+}
+
+.header-content-text {
+    font-family: SouvienneBold;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+
+}
+
+/*
+    Main content
+ */
+
+/*
+    SideBar styles
+ */
+
+.content-sidebar-font {
+    font-family: no_name_37_Light;
+    font-weight: bold;
+    color: black;
+}
+
+.content-sidebar-font:hover {
+    background-color: #a1c99b;
+}
+
+.content-sidebar-font:visited {
+    color: black;
+}
+
+@media screen and (min-width: 1025px) {
+    .content-sidebar-height{
+        height: 1.8em;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .content-sidebar-height{
+        height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.content-sidebar-border {
+    border: none;
+    padding-right: 0.5rem;
+}
+
+.sidebar-border {
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 0 0.1rem rgba(0,0,0,0.5);
+    border-radius: 0.25rem;
+    overflow: auto;
+}
+
+.content-sidebar-font:hover {
+    color: black;
+}
+
+.clear-float {
+    overflow: auto;
+}
+
+.arrows-right {
+
+    margin: 0 0 0 auto; /* то же, что margin-left: auto;  */
+}
+
+/*
+    Open menu sidebar styles
+ */
+.open-font{
+    font-family: no_name_37_Light;
+    font-size: 100%;
+}
+
+.top-offset-text {
+    padding-top: 0.25rem;
+}
+
+@media screen and (min-width: 1025px) {
+    .reset-padding-right {
+        padding-right: 0px;
+    }
+
+    .reset-padding-left{
+        padding-left: 0px;
+    }
+
+    .set-padding-left {
+        padding-left: 1.25rem;
+    }
+
+    .set-background {
+        background:
+                url(../image/store/img.png) right bottom no-repeat;
+    }
+}
+
+/*
+    Ordering information
+ */
+.header-text {
+    font-family: SouvienneBold;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.card-hr {
+    border-color: #1f7114;
+    border-width: 0.2rem;
+}
+
+.card-border {
+    box-shadow: 0 0 0.1rem rgba(0,0,0,0.5);
+}
+
+.card-margin-botton {
+    margin-bottom: 3rem;
+}
+
+.card-header-font {
+    font-family: SouvienneBold;
+    font-size: 1.5rem;
+}
+
+.card-font {
+    font-family: no_name_37;
+    font-size: 1.2rem;
+}
+
+.card-set-padding {
+    padding-right: 1.25em;
+    padding-left: 1.25em;
+}
+
+.border-red {
+    border: 1px solid #ff0000;
+    border-radius: 1rem;
+}
+
+.to-border {
+    border: 1px solid #ff0000; /* Белая рамка */
+    border-radius: 1.4rem; /* Радиус скругления */
+    margin: 0.35rem;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.img-top {
+    margin-top: -3em;
+}
+
+.img-botton {
+    margin-bottom: 1em;
+}
+
+/*
+    Block statistics
+ */
+.set-background-statistics {
+    background:
+            url(../image/donetsk.png) repeat;
+    background-size: auto;
+}
+
+.ellipse-number {
+    color: #5e8b68;
+    font-family: Arial;
+    font-size: 9rem;
+    margin-top: -12rem;
+}
+
+.ellipse-header {
+    color: #16570c;
+    font-family: Arial;
+    font-size: 2.5rem;
+}
+
+/*
+    Footer styles
+ */
+.footer-color {
+    background: linear-gradient(to bottom, #1d6412 0%, #258117 36%, #258217 100%);
+}
+
+.footer-color-bottom {
+    background: linear-gradient(to bottom, #1d6412 0%, #258117 40%, #258217 100%);
+}
+
+.header-font {
+    font-size: 1.4rem;
+    font-family: no_name_37_Light;
+    letter-spacing: 0.3rem;
+    padding-top: 1rem;
+}
+
+.footer-font {
+    font-size: 1rem;
+    font-family: no_name_37_Light;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+.footer-img-padding-right {
+    margin-right: 1.25rem;
+}
+
+.footer-top {
+    padding-top: 1rem;
+}
+
+
+/*
+    Catalogs store
+ */
+.text-header-catalog {
+    color: black;
+}
+
+.text-catalog-font {
+    font-family: no_name_37;
+    font-size: 1.4rem;
+}
+
+.text-catalog-padding {
+    padding-top: 0.7rem;
+}
+
+.button-catalog {
+    background-color: #258217;
+    color: white;
+    font-family: no_name_37;
+    font-size: 1.5rem;
+    box-shadow: 0 0 0.7rem rgba(0,0,0,0.5);
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #ddecdb;
+}
+
+.not-link-a {
+    color: black;
+}
+
+/*
+    Style for contacts page
+ */
+.contacts-text-spacing {
+    font-family: SouvienneBold;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.contacts-border-right {
+    border-color: #c4c4c4;
+    border-width: 0.1rem;
+    border-right-style: solid;
+}
+
+.contacts-text-family {
+    font-family: no_name_37;
+}
+
+.contacts-text-lightgray {
+    color: #b2adad;
+}
+
+.contacts-text-gray {
+    color: #4f4f4f;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.contacts-text-middle {
+    font-size: 1.5rem;
+}
+
+.contacts-text-large {
+    font-size: 2rem;
+}
+
+.content-img-padding {
+    padding-left: 1.25rem;
+}
+
+/*
+    Paga about
+ */
+.about-content-styles {
+    font-family: no_name_37;
+    font-size: 1.2rem;
+    color: black;
+    padding-left: 2rem;
+}
+
+/*
+    Page orders
+ */
+.text-danger-styles {
+    padding-top: 1rem;
+    color: red;
+}
+
+.order-border-styles {
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 0 0.1rem rgba(0,0,0,0.5);
+    border-radius: 0.25rem;
+}
+
+.order-input-styles {
+    border-color: #258217;
+    border-width: 0.1875em;
+}
+
+.order-text-header-styles {
+    font-family: SouvienneBold;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #439339;
+}
+
+.order-text-styles {
+    font-family: no_name_37;
+ }
+
+.order-text-styles-small {
+    font-family: no_name_37;
+    font-size: 0.8rem;
+}
+
+.button-add-styles {
+    background-color: #cb2525;
+    font-family: no_name_37;
+    margin-top: 0.5rem;
+}
+
+.button-text-styles {
+    font-family: no_name_37;
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 0.5rem;
+
+}
+
+.button-order-styles {
+    background-color: #258217;
+    font-family: no_name_37;
+    margin-top: 0.5rem;
+}
+
+
+/*
+    Calculator styles
+ */
+/*
+    Tabs
+ */
+#raz {
+    position: relative;
+    height: 250px;
+    border-top: 30px solid #fff;
+}
+#raz > div { /* вкладка */
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    visibility: collapse;
+    transition: 0s 9999999s;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 5px;
+}
+#raz > div:before { /* рамка вкладки */
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: #808080 solid 1px;
+    border-top: none;
+}
+#raz > div:hover, #raz > div:nth-of-type(1) {
+    visibility: visible;
+    transition: 0s;
+}
+#raz:hover > div:not(:hover) {
+    visibility: hidden;
+    transition: 0s;
+}
+#raz > div > span { /* кнопка */
+    position: absolute;
+    top: -30px;
+    line-height: 30px;
+    height: 30px;
+    width: 25%; /* 4 вкладки, а значит 100/4 */
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(128,128,128);
+    border-left-color: rgba(0,0,0,0);
+    visibility: visible;
+    transition: 0s 9999999s;
+    cursor: pointer;
+}
+#raz > div:nth-of-type(1) > span {left: 0; border-left-color: rgb(128,128,128);}
+#raz > div:nth-of-type(2) > span {left: 25%;}
+#raz > div:nth-of-type(3) > span {left: 50%;}
+#raz > div:nth-of-type(4) > span {left: 75%;}
+#raz > div:hover > span, #raz > div:nth-of-type(1) > span {
+    border-bottom-color: rgba(0,0,0,0);
+    transition:  0s;
+}
+#raz:hover > div:not(:hover) > span {
+    border-bottom-color: rgba(128,128,128,.99);
+    transition:  0s;
+}
+#raz > div:not(:nth-of-type(1)):not(:hover):after { /* появляется нижняя граница у первой кнопки */
+    content: "";
+    left: 0;
+    position: absolute;
+    top: -1px;
+    width: 25%;
+    border-top: 1px solid rgb(128,128,128);
+}
+/*
+    End tabs
+ */
+
+.background-top {
+    background: linear-gradient(to bottom, #f9f9f9 0%, #f7f8f8 86%, #e7e7e7 100%);
+}
+
+.header-calc-styles {
+    font-family: SouvienneBold;
+}
+
+.button-calc-styles {
+    background-color: #258217;
+    font-family: SouvienneBold;
+    margin-top: 0.5rem;
+    width: 15rem;
+    height: 3rem;
+    box-shadow: 0 0 0.7rem rgba(0,0,0,0.5);
+}
+
+/*
+    Set font-size
+ */
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 20px;
+    }
+}
